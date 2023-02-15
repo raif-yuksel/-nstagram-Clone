@@ -1,0 +1,59 @@
+.light-mode-button {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    width: 70px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.light-mode-button:focus {
+    outline: none;
+}
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 1s;
+}
+body {
+    background-color: #f6f6f6;
+    transition: background-color 1s;
+}
+
+body[light-mode="dark"] {
+    background-color: #000;
+    color: #ced4e2;
+}
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #fff;
+    color: #141516;
+}
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+    right: 5px;
+    background-color: #000;
+    left: auto;
+    transition: 1s;
+}
+span.info strong.name {
+    color: #fff;
+    font-size: 13px;
+}

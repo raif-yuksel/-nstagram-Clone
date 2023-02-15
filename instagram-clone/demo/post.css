@@ -1,0 +1,178 @@
+.flow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.profile-pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.icons.flow div svg {
+    fill: #fff;
+}
+.right .save svg._8-yf5 {
+    fill: #fff;
+}
+.profile-name{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+    color: #fff;
+}
+.menu svg._8-yf5 {
+    fill: #fff;
+}
+.img-content{
+    max-width: 599px;
+    max-height: 600px;
+    position: relative;
+}
+@keyframes like-heart-animation{ 
+    0% { opacity:0; transform:scale(0); }
+    15% { opacity:.9; transform:scale(1.2); }
+    30% { transform:scale(.95); }
+    45%,
+    80% { opacity:.9; transform:scale(1); }
+  }
+  .img-content i {
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation-duration: 1000ms;
+    animation-name: like-heart-animation;
+    animation-timing-function: ease-in-out;
+}
+.img-content img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bottom-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.bottom-content .left .profile-details:nth-child(3) p {
+    margin: 0;
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+}
+.bottom-content .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bottom-content .profile-details{
+    margin: 3px 0;
+}
+div.post-area{
+    padding-bottom: 51px;
+}
+.munite {
+    margin-top: 8px;
+}
+.munite span {
+    color: rgb(168, 168, 168);
+    font-weight: 400;
+    font-size: 10px;
+}
+.profile-details .profile-pic {
+    width: 25px;
+    height: 25px;
+}
+.profile-details p{
+    font-size: 14px;
+    margin: 15px 0 0 0;
+}
+.icons .icon + .icon{
+    margin-left: 20px;
+}
+
+.save svg:hover{
+    fill: gray;
+    cursor: pointer;
+}
+
+.comment-section{
+    border-top: 1px solid rgb(182,182,182);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0 40px;
+}
+.search .emoji{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+}
+.post{
+    color: #0095f6;
+    font-weight: 600;
+}
+div#exampleModal .modal-dialog {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.modal-content {
+    background-color: rgb(38,38,38) !important;
+    width: 302px !important;
+    margin: auto;
+}
+.modal-body.p-0 button.btn {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    height: 48px;
+    border-bottom: 1px solid rgb(54,54,54);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.modal-body.p-0 button.btn:last-child {
+    border-radius: 0.375px !important;
+    border: 0 !important;
+}
+button.btn.btn-dangers {
+    color: rgb(237, 73, 86) !important;
+}
+.modal-body.p-0 button.btn:focus, .modal-body.p-0 button.btn:hover {
+    border: 0;
+    border-bottom: 1px solid rgb(54,54,54);
+}
