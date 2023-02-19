@@ -63,10 +63,14 @@
             </div>
           </div>
           <div class="mid-content">
-            <div class="img-content">
+            <div class="img-content video-wrap">
               <i class="fa fa-heart d-none" aria-hidden="true"></i>
-              <img src="https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers&n=27&h=384&w=480" alt="">
+              <video autoplay muted id="bgVideo" playsinline loop>
+                <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4" type="video/mp4">
+                <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.ogg" type="video/ogg">
+              </video>
             </div>
+            <button id="MuteButton" class="muted" onclick="toggleMute();"><svg aria-label="Ses kapatıldı." class="_ab6-" color="#ffffff" fill="#ffffff" height="12" role="img" viewBox="0 0 48 48" width="12"><path clip-rule="evenodd" d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z" fill-rule="evenodd"></path></svg></button>
           </div>
           <div class="bottom-content">
             <div class="left">
@@ -77,9 +81,11 @@
                   </svg>
                 </div>
                 <div class="comment icon">
-                  <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
-                    <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
-                  </svg>
+                  <button id="messageBtn">
+                    <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                    </svg>
+                  </button>
                 </div>
                 <div class="share icon">
                   <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
@@ -88,7 +94,7 @@
                 </div>
               </div>
               <div class="profile-details flow">
-                <p><span>3.991</span> Beğenme</p>
+                <p><output>3991</output> Beğenme</p>
               </div>
               <div class="profile-details flow">
                 <p>163 yorumun tümünü gör</p>
@@ -140,9 +146,11 @@
                   </svg>
                 </div>
                 <div class="comment icon">
-                  <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
-                    <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
-                  </svg>
+                  <button id="messageBtn">
+                    <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                    </svg>
+                  </button>
                 </div>
                 <div class="share icon">
                   <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24">
@@ -191,34 +199,84 @@
     </main>
 
 
+    <div id="myModal" class="message-modal">
+      <div class="message-modal-content">
+        <div class="d-flex align-items-center">
+          <div class="close-button">
+            <span class="message-close"><svg aria-label="Geri" class="_ab6-" color="#fafafa" fill="#fafafa" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"></path></svg></span>
+          </div>
+          <div class="modal-text">
+            Yorumlar
+          </div>
+          <div class="paylasbutton">
+            <svg aria-label="Gönderi Paylaş" class="_ab6-" color="#fafafa" fill="#fafafa" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+          </div>
+        </div>
+        <div class="search-profile">
+          <div class="search-image">
+            <img src="https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers&n=27&h=384&w=480" alt="">
+          </div>
+          <div class="search-area">
+            <input type="text" placeholder="Yorum ekle...">
+            <button class="btn">Paylaş</button>
+          </div>
+        </div>
+        <div class="message-box-area">
+          <div class="message-box">
+            <div class="img-area">
+              <img src="https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers" alt="">
+            </div>
+            <div class="message-area">
+              <p class="profile-title">Raif Yüksel</p>
+              <p class="profile-message">deneme</p>
+            </div>
+            <div class="heart-area">
+              
+            </div>
+          </div>
+          
+          <div class="message-box">
+            <div class="img-area">
+              <img src="https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers" alt="">
+            </div>
+            <div class="message-area">
+              <p class="profile-title">Raif Yüksel</p>
+              <p class="profile-message">deneme</p>
+            </div>
+            <div class="heart-area">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <button class="btn btn-dangers">Şikayet Et</button>
+            <button class="btn btn-dangers">Takibi Bırak</button>
+            <button class="btn">Favorilere ekle</button>
+            <button class="btn">Gönderiye git</button>
+            <button class="btn">Paylaş...</button>
+            <button class="btn">Bağlantıyı Kopyala</button>
+            <button class="btn">Sitene Göm</button>
+            <button class="btn">Bu hesap hakkında</button>
+            <button class="btn">İptal</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="demo/dark-mode.js"></script>
-    <script src="demo/post.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ramon82/zuck.js@master/dist/zuck.min.js"></script>
     <script src="demo/instagram.js"></script>
 
 
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body p-0">
-        <button class="btn btn-dangers">Şikayet Et</button>
-        <button class="btn btn-dangers">Takibi Bırak</button>
-        <button class="btn">Favorilere ekle</button>
-        <button class="btn">Gönderiye git</button>
-        <button class="btn">Paylaş...</button>
-        <button class="btn">Bağlantıyı Kopyala</button>
-        <button class="btn">Sitene Göm</button>
-        <button class="btn">Bu hesap hakkında</button>
-        <button class="btn">İptal</button>
-      </div>
-    </div>
-  </div>
-</div>
 
   </body>
 </html>
